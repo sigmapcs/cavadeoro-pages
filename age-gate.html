@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cava de Oro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cavadeoro">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Tequila CAVA DE ORO ® es la marca de Tequilas Premier que produce Cia. Tequilera Puerta de Hierro. Producido y envasado de origen en El Arenal Jalisco, México; bajo las más estrictas normas y estándares de calidad ofreciendo siempre el Mejor Tequila 100% DE AGAVE, elaborado de manera tradicional con el mejor AGAVE AZUL &amp;quot;Tequilana Weber&amp;quot; cuidado, seleccionado y cosechado para brindar a nuestros Clientes el Sabor tradicional del mejor Tequila llevándolo a la experiencia del verdadero reflejo del Agave.">
+    <meta property="og:image" content="./img/cover.jpg">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/web-fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/axios.js"></script>
+    <script>
+      if(location.pathname !=="/age-gate.html") {
+        if (!sessionStorage.getItem('age')){
+          location.href = "./age-gate.html"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="Header" id="Header">
+      <div class="ed-container Header-container"><a class="logo" href="#start"><img src="img/logo-negro.svg"></a>
+        <div class="bottom-container">
+          <button class="toggle-nav btn-header" id="togle-nav"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+      <nav class="navigator" id="navigator">
+        <button class="close-menu btn-header" id="close-menu"><i class="fas fa-times"></i></button>
+        <ul class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#about-us" itemprop="name">nosotros</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#factory" itemprop="name">fábrica</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#products" itemprop="name">productos</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#contact" itemprop="name">contacto</a></li>
+        </ul>
+        <div class="branding"><img src="img/escudo.svg" alt="escudo cava de oro">
+          <h1> TEQUILERA PUERTA DE HIERRO S.A DE C.V.</h1>
+        </div>
+      </nav>
+    </header>
+    <main class="Main">
+      <div class="full-screen" id="age-gate">
+        <div class="full-screen__container"><img class="full-screen__logo" src="img/logo-negro.svg">
+          <h1 class="full-screen__title">Welcome to Cava de Oro official website</h1>
+          <p class="full-screen__text">Before you see our unique and delicious products, please confirm that you are 18 years old or older.</p>
+          <form class="form-age-gate" id="form-age-gate" autofill="off">
+            <div class="inputs-container">
+              <div class="group-form year">
+                <p class="text-form">YEAR</p>
+                <div class="group-input year">
+                  <input class="input-year" type="text" name="year" required id="input-year" max="9999" maxlength="4">
+                </div>
+              </div>
+              <div class="group-form month">
+                <p class="text-form">MONTH</p>
+                <div class="group-input month">
+                  <input class="input-month" type="text" name="month" required id="input-month" max="12" maxlength="2">
+                </div>
+              </div>
+              <div class="group-form month">
+                <p class="text-form">DAY</p>
+                <div class="group-input month">
+                  <input class="input-day" type="text" name="day" required id="input-day" max="31" maxlength="2">
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="btn-age-gate" type="submit">ENTER</button>
+            </div>
+          </form>
+          <p class="full-screen__text">ENTER THIS SITE ONLY IF YOU ARE OF LEGAL DRINKING AGE. BY CLICKING "ENTER", YOU AGREE TO THE TERMS OF USE & THE PRIVACY POLICY OF THIS SITE</p>
+        </div>
+      </div>
+    </main>
+    <footer class="Footer">
+      <p>TEQUILA CAVA DE ORO ® <span id="current-year"> </span> Todos los derechos reservados</p>
+    </footer>
+    <script src="js/scripts-min.js"></script>
+  </body>
+</html>
