@@ -11,29 +11,25 @@
     <meta property="og:image" content="./img/cover.jpg">
     <link rel="shortcut icon" href="img/favicon.png">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/web-fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/axios.js"></script>
+    <link rel="stylesheet" href="web-fonts/stylesheet.css?t=1554746479963">
+    <link rel="stylesheet" href="css/styles.css?t=1554746479963">
+    <script src="js/jquery-3.3.1.min.js?t=1554746479963"></script>
+    <script src="js/axios.js?t=1554746479963"></script>
     <script>
-      if(location.pathname !=="/cavadeoro-pages/age-gate.html") {
-        if (!sessionStorage.getItem('age')){
-          location.href = "./age-gate.html"
-        }
+      if (!sessionStorage.getItem('age')){
+        location.href = "./age-gate1.html"
       }
     </script>
   </head>
   <body>
     <header class="Header" id="Header">
       <div class="ed-container Header-container"><a class="logo" href="#start"><img src="img/logo-negro.svg"></a>
-        <div class="bottom-container">
-          <button class="toggle-nav btn-header" id="togle-nav"><i class="fas fa-bars"></i></button>
-        </div>
+        <div class="toggle-nav btn-header" id="toogle-nav"></div>
       </div>
       <nav class="navigator" id="navigator">
-        <button class="close-menu btn-header" id="close-menu"><i class="fas fa-times"></i></button>
-        <ul class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
-          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#about-us" itemprop="name">nosotros</a></li>
+        <div class="close-menu btn-header" id="close-menu"><img src="img/close.svg" alt="btn close"></div>
+        <ul class="top-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="top-menu">
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#aboutUs" itemprop="name">nosotros</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#factory" itemprop="name">fábrica</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#products" itemprop="name">productos</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#contact" itemprop="name">contacto</a></li>
@@ -46,12 +42,28 @@
     <main class="Main">
       <section class="ed-container start" id="start">
         <article class="bottles">
-          <div class="bottle-container"><img src="img/botella1.png" alt="imagen botella1"></div>
-          <div class="bottle-container"><img src="img/botella2.png" alt="imagen botella2"></div>
-          <div class="bottle-container"><img src="img/botella3.png" alt="imagen botella3"></div>
-          <div class="bottle-container"><img src="img/botella4.png" alt="imagen botella4"></div>
-          <div class="bottle-container"><img src="img/botella5.png" alt="imagen botella5"></div>
+          <div class="bottle-container"><img src="img/granplata.png" alt="imagen granplata"></div>
+          <div class="bottle-container"><img src="img/reposado.png" alt="imagen reposado"></div>
+          <div class="bottle-container"><img src="img/anejo.png" alt="imagen anejo"></div>
+          <div class="bottle-container"><img src="img/extraanejo_grancava.png" alt="imagen extraanejo_grancava"></div>
+          <div class="bottle-container"><img src="img/extraanejo.png" alt="imagen extraanejo"></div>
         </article>
+      </section>
+      <section class="sction-page aboutUs" id="aboutUs"><img src="img/fabrica.jpg" alt="artesanal Cava de Oro">
+        <div class="aboutUs-text">
+          <h3>SABOR A TRADICIÓN</h3>
+          <p>Tequila cava de oro ®, el tequila de sabor excepcional, elaborado de manera artesanal con el mejor agave azul, cuidado, seleccionado y cosechado para brindar el sabor tradicional del mejor tequila, llevándolo a la experiencia del verdadero reflejo del agave.</p>
+          <div class="separator"></div>
+          <p>Cia. Tequilera Puerta de Hierro S.A de C.V. es una empresa que nace y se desarrolla en El Arenal Jalisco México, situado en un lugar estratégico ya que además de ser la Cuna del Agave es la puerta de la Ruta del Tequila y del Paisaje Agavero, por lo que ha impactado fuertemente al sector turístico de la región ya que representa una excelente oportunidad de conocer y aprender de forma intima en que consiste la producción del tequila artesanal.</p><img class="sello" src="img/sello.svg" alt="Sello Cava de Oro">
+        </div>
+      </section>
+      <section class="sction-page factory" id="factory"><img src="img/artesanal.jpg" alt="fabrica Cava de Oro">
+        <div class="factory-text">   
+          <h3>ELABORACIÓN ARTESANAL</h3>
+          <p>Ponemos toda nuestra pasión en la elaboración de tequila cava de oro, para así brindarte el sabor excepcional del mejor Tequila.</p>
+          <div class="separator"></div>
+          <p>Tequila CAVA DE ORO ® es la marca de Tequilas Premier que produce Cia. Tequilera Puerta de Hierro. Producido y envasado de origen en El Arenal Jalisco, México; bajo las más estrictas normas y estándares de calidad ofreciendo siempre el mejor Tequila 100% de Agave, elaborado de manera artesanal con el mejor Agave Azul "Tequilana Weber" cuidado, seleccionado y cosechado para brindar el sabor tradicional del mejor tequila llevándolo a la experiencia del verdadero reflejo del Agave.</p><img class="escudo" src="img/escudo1.svg" alt="Escudo Cava de Oro">
+        </div>
       </section>
       <section class="products" id="products">
         <aside class="side-bar">
@@ -63,109 +75,15 @@
             <li class="cristalino" data-id="4"> <span><i class="fas fa-caret-right"></i></i></span>Cristalino</li>
           </ul>
         </aside>
-        <article class="products-container" id="slider">
-          <div class="product show blanco">
-            <div class="product-banner">
-              <div class="banner-img"><img src="img/botella1.png" alt="Tequila Blanco"></div>
-            </div>
-            <div class="product-data">
-              <h2 class="data__title">Tequila Plata</h2>
-              <p class="data__subtitle">Tequila Cava de Oro Blanco, intenso y divertido.</p>
-              <ul class="data__text">
-                <li><strong>Color:</strong>Matices brillantes y tonos luminosos plateados y Oajizos.</li>
-                <li><strong>Aroma:</strong>Potente herbàceo y tierra mojada.</li>
-                <li><strong>Sabor:</strong>Texturas suaves, agave cocido y caramelo, final suave y dulce reafirmando su càracter.</li>
-              </ul>
-              <footer class="data__footer">
-                <p class="highlight">100%</p>
-                <p class="agave">de Agave Azul</p>
-              </footer>
-            </div>
-          </div>
-          <div class="product reposado">
-            <div class="product-banner">
-              <div class="banner-img"><img src="img/botella2.png" alt="Tequila Reposado"></div>
-            </div>
-            <div class="product-data">
-              <h2 class="data__title">Tequila Reposado</h2>
-              <p class="data__subtitle">Tequila Cava de Oro Reposado, noble y generoso, madurado por 6 meses en barricas de roble blanco francés.</p>
-              <ul class="data__text">
-                <li><strong>Color:</strong>Pajizo brillante.</li>
-                <li><strong>Aroma:</strong>Fresco, agave cocido y suavemente amaderado.</li>
-                <li><strong>Sabor:</strong>Suave y refinado, notas a roble, agave cocido y caramelo. Final de boca prolongado y agradable.</li>
-              </ul>
-              <footer class="data__footer">
-                <p class="highlight">100%</p>
-                <p class="agave">de Agave Azul</p>
-              </footer>
-            </div>
-          </div>
-          <div class="product anejo">
-            <div class="product-banner">
-              <div class="banner-img"><img src="img/botella3.png" alt="Tequila Añejo"></div>
-            </div>
-            <div class="product-data">
-              <h2 class="data__title">Tequila Añejo</h2>
-              <p class="data__subtitle">Súper añejo, te da su historia y notas lo que ha estado esperando por ti.</p>
-              <ul class="data__text">
-                <li><strong>Color:</strong>Oro intenso.</li>
-                <li><strong>Aroma:</strong>Exquisito a frutos secos y roble tostado.</li>
-                <li><strong>Sabor:</strong>Sedosa textura y fresco al paladar con final largo y toque dulce.</li>
-              </ul>
-              <footer class="data__footer">
-                <p class="highlight">100%</p>
-                <p class="agave">de Agave Azul</p>
-              </footer>
-            </div>
-          </div>
-          <div class="product extra">
-            <div class="product-banner">
-              <div class="banner-img"><img src="img/botella4.png" alt="Tequila Extra Añejo"></div>
-            </div>
-            <div class="product-data">
-              <h2 class="data__title">Tequila Extra Añejo</h2>
-              <p class="data__subtitle">Visible la riqueza del pasado. Sutil y elegante con 5 años de maduración en barricas de roble blanco francés.</p>
-              <ul class="data__text">
-                <li><strong>Color:</strong>Matices rojizo brillante y ámbar oscuro.</li>
-                <li><strong>Aroma:</strong>Multitud de aromas frutales y roble tostado.</li>
-                <li><strong>Sabor:</strong>Su exquisita dulzura convierte un ampuloso.</li>
-              </ul>
-              <footer class="data__footer">
-                <p class="highlight">100%</p>
-                <p class="agave">de Agave Azul</p>
-              </footer>
-            </div>
-          </div>
-          <div class="product cristalino">
-            <div class="product-banner">
-              <div class="banner-img"><img src="img/botella5.png" alt="Tequila Extra Añejo Cristalino"></div>
-            </div>
-            <div class="product-data">
-              <h2 class="data__title">Tequila Extra Añejo</h2>
-              <h3 class="highlight">Cristalino</h3>
-              <p class="data__subtitle">Visible la riqueza del pasado. Sutil y elegante con 5 años de maduración en barricas de roble blanco francés.</p>
-              <ul class="data__text">
-                <li><strong>Color:</strong>Matices brillantes y tonos luminosos plateados</li>
-                <li><strong>Aroma:</strong>Multitud de aromas frutales y roble tostado.</li>
-                <li><strong>Sabor:</strong>Su exquisita dulzura convierte un ampuloso y</li>
-              </ul>
-              <footer class="data__footer">
-                <p class="highlight">100%</p>
-                <p class="agave">de Agave Azul</p>
-              </footer>
-            </div>
-          </div>
-        </article>
+        <article class="products-container" id="slider"><img class="show" src="img/plata-all.png" alt="Tequila Plata" id="plata"><img src="img/reposado-all.png" alt="Tequila Plata" id="reposado"><img src="img/anejo-all.png" alt="Tequila Plata" id="anejo"><img src="img/extra-all.png" alt="Tequila Plata" id="extra"><img src="img/cristalido-all.png" alt="Tequila Plata" id="cristalino"></article>
       </section>
       <section class="contact" id="contact">
         <article class="contact__container">
-          <div class="contact__info">
-            <h2>Contacto</h2>
-            <p>Estamos aquí para ayudar. Para consultas generales, pedidos o preguntas sobre su pedido, envíenos un mensaje o llámenos al (914) 510-2824</p>
+          <div class="contact__info"><img class="contact-img" src="img/textocontacto.png" alt="texto contacto">
             <ul class="social">
-              <li class="instagram"><a href="https://instagram.com/cavadeoro/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li class="facebook"><a href="https://www.facebook.com/pages/Cava-de-Oro-Tequila/1027324423958441?ref=hl" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="twitter"><a href="https://twitter.com/cavadeoro" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li class="instagram"><a href="https://instagram.com/cavadeoro/" target="_blank"><img src="img/instagram.png"></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/pages/Cava-de-Oro-Tequila/1027324423958441?ref=hl" target="_blank"><img src="img/facebook.png"></a></li>
+              <li class="twitter"><a href="https://twitter.com/cavadeoro" target="_blank"><img src="img/twitter.png"></a></li>
             </ul>
           </div>
           <div class="contact__form">
@@ -193,13 +111,13 @@
             </form>
           </div>
         </article>
-        <footer class="contact__footer">
+        <footer class="contact__footer" id="contact__footer">
           <div class="contact__footer-container">
-            <div class="img square"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/5d4227ffdfddb40945ac2a9149eb8ff7/5CE86502/t51.2885-15/e35/47692557_770945213267853_2867726552320180224_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net"></div>
-            <div class="social-network square"><i class="fab fa-instagram"></i></div>
-            <div class="img square"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/b0313aaf1b59ae3c98d12a28d99e97a1/5CC9D1F8/t51.2885-15/e35/45738372_741826702842623_6041745888445988864_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net"></div>
-            <div class="social-network square comunity">Nuestra</br>Comunidad</div>
-            <div class="img square"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/82a073094ef8520dfd137a30e92ba52c/5CFE78E2/t51.2885-15/e35/47229463_2418776524816827_2198525146719846400_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net"></div>
+            <div class="img square"><a href="#" target="_blank"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/5d4227ffdfddb40945ac2a9149eb8ff7/5CE86502/t51.2885-15/e35/47692557_770945213267853_2867726552320180224_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net" id="photo0"></a></div>
+            <div class="social-network square"><a href="https://instagram.com/cavadeoro/" target="_blank"><img src="img/instagram.png"></a></div>
+            <div class="img square"><a href="#" target="_blank"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/b0313aaf1b59ae3c98d12a28d99e97a1/5CC9D1F8/t51.2885-15/e35/45738372_741826702842623_6041745888445988864_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net" id="photo1"></a></div>
+            <div class="social-network square comunity"><a href="https://instagram.com/cavadeoro/" target="_blank">Nuestra</br>Comunidad</a></div>
+            <div class="img square"><a href="#" target="_blank"><img src="https://instagram.fgdl3-1.fna.fbcdn.net/vp/82a073094ef8520dfd137a30e92ba52c/5CFE78E2/t51.2885-15/e35/47229463_2418776524816827_2198525146719846400_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net" id="photo2"></a></div>
           </div>
         </footer>
       </section>
@@ -207,6 +125,6 @@
     <footer class="Footer">
       <p>TEQUILA CAVA DE ORO ® <span id="current-year"> </span> Todos los derechos reservados</p>
     </footer>
-    <script src="js/scripts-min.js"></script>
+    <script src="js/scripts-min.js?t=1554746479963"></script>
   </body>
 </html>

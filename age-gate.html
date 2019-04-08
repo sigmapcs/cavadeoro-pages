@@ -11,29 +11,25 @@
     <meta property="og:image" content="./img/cover.jpg">
     <link rel="shortcut icon" href="img/favicon.png">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/web-fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/axios.js"></script>
+    <link rel="stylesheet" href="web-fonts/stylesheet.css?t=1554746479746">
+    <link rel="stylesheet" href="css/styles.css?t=1554746479746">
+    <script src="js/jquery-3.3.1.min.js?t=1554746479746"></script>
+    <script src="js/axios.js?t=1554746479746"></script>
     <script>
-      if(location.pathname !=="/cavadeoro-pages/age-gate.html") {
-        if (!sessionStorage.getItem('age')){
-          location.href = "./age-gate.html"
-        }
+      if (!sessionStorage.getItem('age')){
+        location.href = "./age-gate1.html"
       }
     </script>
   </head>
   <body>
     <header class="Header" id="Header">
       <div class="ed-container Header-container"><a class="logo" href="#start"><img src="img/logo-negro.svg"></a>
-        <div class="bottom-container">
-          <button class="toggle-nav btn-header" id="togle-nav"><i class="fas fa-bars"></i></button>
-        </div>
+        <div class="toggle-nav btn-header" id="toogle-nav"></div>
       </div>
       <nav class="navigator" id="navigator">
-        <button class="close-menu btn-header" id="close-menu"><i class="fas fa-times"></i></button>
-        <ul class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
-          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#about-us" itemprop="name">nosotros</a></li>
+        <div class="close-menu btn-header" id="close-menu"><img src="img/close.svg" alt="btn close"></div>
+        <ul class="top-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="top-menu">
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#aboutUs" itemprop="name">nosotros</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#factory" itemprop="name">fábrica</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#products" itemprop="name">productos</a></li>
           <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#contact" itemprop="name">contacto</a></li>
@@ -46,40 +42,40 @@
     <main class="Main">
       <div class="full-screen" id="age-gate">
         <div class="full-screen__container"><img class="full-screen__logo" src="img/logo-negro.svg">
-          <h1 class="full-screen__title">Welcome to Cava de Oro official website</h1>
-          <p class="full-screen__text">Before you see our unique and delicious products, please confirm that you are 18 years old or older.</p>
+          <h1 class="full-screen__title">Bienvenidos al sitio oficial de Cava de Oro</h1>
+          <p class="full-screen__text">Antes de conocer la calidad de nuestros deliciosos productos, confirma que eres mayor de edad.</p>
           <form class="form-age-gate" id="form-age-gate" autofill="off">
             <div class="inputs-container">
               <div class="group-form year">
-                <p class="text-form">YEAR</p>
+                <p class="text-form">AÑO</p>
                 <div class="group-input year">
                   <input class="input-year" type="text" name="year" required id="input-year" max="9999" maxlength="4">
                 </div>
               </div>
               <div class="group-form month">
-                <p class="text-form">MONTH</p>
+                <p class="text-form">MES</p>
                 <div class="group-input month">
                   <input class="input-month" type="text" name="month" required id="input-month" max="12" maxlength="2">
                 </div>
               </div>
               <div class="group-form month">
-                <p class="text-form">DAY</p>
+                <p class="text-form">DÍA</p>
                 <div class="group-input month">
                   <input class="input-day" type="text" name="day" required id="input-day" max="31" maxlength="2">
                 </div>
               </div>
             </div>
             <div class="btn-container">
-              <button class="btn-age-gate" type="submit">ENTER</button>
+              <button class="btn-age-gate" type="submit">ENTRAR</button>
             </div>
           </form>
-          <p class="full-screen__text">ENTER THIS SITE ONLY IF YOU ARE OF LEGAL DRINKING AGE. BY CLICKING "ENTER", YOU AGREE TO THE TERMS OF USE & THE PRIVACY POLICY OF THIS SITE</p>
+          <p class="full-screen__text">ENTRA A ESTE SITIO SÓLO SI TIENES LA EDAD LEGAR PARA TOMAR, AL HACER CLICK EN ENTRAR, ACEPTAS LOS TÉRMINOS DE USO Y LA POLÍTICA DE PRIVACIDAD DE ESTE SITIO</p>
         </div>
       </div>
     </main>
     <footer class="Footer">
       <p>TEQUILA CAVA DE ORO ® <span id="current-year"> </span> Todos los derechos reservados</p>
     </footer>
-    <script src="js/scripts-min.js"></script>
+    <script src="js/scripts-min.js?t=1554746479746"></script>
   </body>
 </html>
